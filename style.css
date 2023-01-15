@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0F0D13;
+
+  
+}
+
+/* #app *{ */
+    /* border: 1px solid red; */
+
+
+#app{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: 
+    'A B'
+     'A C'
+    ;
+    gap: 32px;
+
+    place-content: center;
+
+    height: 100vh;
+}
+
+#player-1{
+    grid-area: A;
+   
+    padding: 58px 38px;
+}
+
+#player-2{
+    grid-area: B;
+
+    height: fit-content;
+}
+#player-3{
+    grid-area: C;
+}
+
+.player{
+    background-color: #2A2141;
+    padding: 28px;
+
+    width: fit-content;
+
+    border-radius: 15px;
+}
+
+
+#player-1 img{
+    width: 190px;
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+#player-1 .wrapper{
+    width: 190px;
+
+}
+
+#player-1 .infor{
+    margin-top: 28px;
+}
+
+.player h1{
+    font-size: 24px;
+    color: #fff;
+}
+
+.infor{
+    color:#fff;
+  
+    gap: 9.6px;
+}
+
+.infor h1{
+    font-size: 25px;
+    margin-bottom: 9.6px;
+}
+.infor p{
+    opacity: 0.69;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+.track{
+ position: relative;
+ margin-top: 28px;
+}
+
+.track::before{
+    content: "";
+    height: 6px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    opacity: 0.3;
+    border-radius: 15px;
+    position: absolute;
+}
+.track::after{
+
+    content: "";
+    height: 6px;
+    width: 80%;
+    display: block;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.time{
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.7;
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 9.6px;
+}
+
+.player img{
+    width: 84px;
+    height: 84px;
+
+    border-radius: 15px;
+}
+
+.infor-wrapper{
+    display: flex;
+    gap: 28px;
+
+    align-items: center;
+}
+
+.horizontal .controls{
+
+    padding-inline: 50px;
+}
+
+@media (max-width: 670px) {
+
+    #app{
+        display: flex;
+        flex-direction: column;
+
+        max-width: 270px;
+        margin:auto;
+        
+        height: auto;
+
+        padding-bottom: 60px;
+
+        
+    }
+
+    .horizontal .controls{
+        padding-inline: 30px;
+    }
+}
+    
+
