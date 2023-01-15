@@ -6,7 +6,7 @@ Projeto basico
 
 ## Sobre
 
-Projeto **Player**  foi criado  assistindo a aula de Mayk Brito boracodar.
+Projeto **Player**  foi desenvolvido  assistindo a aula de Mayk Brito boracodar.
 
 ## tecnologias utilizadas
 
